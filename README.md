@@ -24,4 +24,31 @@ IBM® Security QRadar® SIEM is a network security management platform that prov
 IBM is bringing free QRadar to a wider audience with Community Edition. Community Edition is a fully-featured version of QRadar that is low memory, low EPS, and includes perpetual license.
 QRadar Community Edition can be downloaded here: https://www.ibm.com/account/reg/signup?formid=urx-32552
 
+### Installing QRadar Community Edition
+Install IBM Security QRadar Community Edition in a virtual machine. Community Edition is based on QRadar 7.3.0, and is released without a warranty. 
+Check your Linux guest version. Please issue the following command:
+```
+cat /etc/redhat-release
+```
+Q: What is your OS Release version? __________________________________________________
+
+### Before you begin
+You must have a system with a CentOS Linux 7.3 minimal installation that is connected to the internet, and that meets the following requirements to install QRadar Community Edition. Use 8 GB for the SWAP partition and the defaults for other partitions when you install your operating system. Disable SELinux to avoid a system restart during installation.
+
+Check your Linux guest CPU configuration. Please issue the following command:
+```
+lscpu
+```
+Q: How much vCPU do you have? __________________________________________________
+
+Check your Linux guest Memory. Please issue the following command:
+```
+lsmem
+```
+Q: How much GB of Memory do you have? __________________________________________________
+
+Check your Linux guest disk partitioning. Please issue the following command:
+```
+lsblk
+```
 ## From Hyperledger Fabric To QRadar SIEM
