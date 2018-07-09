@@ -4,9 +4,8 @@ The following is about illustrating the use of channel-based events of Hyperledg
 Hyperledger Fabric is a blockchain framework implementation and one of the Hyperledger projects hosted by The Linux Foundation. Intended as a foundation for developing applications or solutions with a modular architecture, Hyperledger Fabric allows components, such as consensus and membership services, to be plug-and-play. Hyperledger Fabric leverages container technology to host smart contracts called “chaincode” that comprise the application logic of the system.
 
 Hyperledger Fabric has multiple security mecanisms, and users activities interacting with the Blockchain generates events and incidents. These incidents and events can be captures and send to application in order order to exploit them.
-[I'm an inline-style link](https://goupadhyblog.files.wordpress.com/2017/02/blockchain2.png?w=662)
 
-
+![alt text](https://goupadhyblog.files.wordpress.com/2017/02/blockchain2.png?w=662 "HLF standards Events & Incidents")
 
 ### Channel-based event service
 Hyperledger Fabric aka HFL introduces channel-based events. These events are similar to the existing events, however are specific to a single channel. The client handling of channel-based events has a few new options when setting up a listener. Channel-based events are a new feature of the Hyperledger Fabric Node.js client as of v1.1.
