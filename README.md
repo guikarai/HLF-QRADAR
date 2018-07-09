@@ -1,9 +1,10 @@
 # Hyperledger Fabric - QRadar SIEM
+The following is about illustrating the use of channel-based events of Hyperledger Fabric, and to redirect captured event/incidents to a QRadar SIEM. 
 ## Hyperledger Fabric
 Hyperledger Fabric
 
 ### Channel-based event service
-This tutorial illustrates the use of channel-based events. These events are similar to the existing events, however are specific to a single channel. The client handling of channel-based events has a few new options when setting up a listener. Channel-based events are a new feature of the Hyperledger Fabric Node.js client as of v1.1.
+Hyperledger Fabric aka HFL introduces channel-based events. These events are similar to the existing events, however are specific to a single channel. The client handling of channel-based events has a few new options when setting up a listener. Channel-based events are a new feature of the Hyperledger Fabric Node.js client as of v1.1.
 
 A client application may use the Fabric Node.js client to register a "listener" to receive blocks as they are added to the channel ledger. We call these "channel-based events", and they allow a client to start to receive blocks from a specific block number, allowing event processing to run normally on blocks that may have been missed. The Fabric Node.js client can also assist client applications by processing the incoming blocks and looking for specific transactions or chaincode events. This allows a client application to be notified of transaction completion or arbitrary chaincode events without having to perform multiple queries or search through the blocks as they are received.
 
